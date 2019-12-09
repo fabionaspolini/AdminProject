@@ -12,6 +12,16 @@ export const MENU_ITEMS: NbMenuItem[] = [
     group: true,
   },
   {
+    title: 'Cadastros',
+    icon: 'layers',
+    children: [
+      {
+        title: 'Cidades',
+        link: '/pages/cidade',
+      },
+    ],
+  },
+  {
     title: 'Auth',
     icon: 'lock-outline',
     children: [

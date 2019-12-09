@@ -8,15 +8,8 @@ const routes: Routes = [{
   path: '',
   component: PagesComponent,
   children: [
-    {
-      path: 'dashboard',
-      component: DashboardComponent,
-    },
-    {
-      path: '',
-      redirectTo: 'dashboard',
-      pathMatch: 'full',
-    },
+    {path: 'dashboard', component: DashboardComponent},
+    {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   ],
 }];
 
