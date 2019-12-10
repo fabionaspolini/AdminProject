@@ -7,7 +7,8 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: 'Cadastros',
     icon: 'layers',
     children: [
-      {title: 'Cidades', link: '/pages/cadastros/cidade'},
+      {title: 'Cidades', link: '/pages/cadastros/cidades'},
+      {title: 'Parceiros de negócios', link: '/pages/cadastros/parceiros'},
     ],
   },
   {

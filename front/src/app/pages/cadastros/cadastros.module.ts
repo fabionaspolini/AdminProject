@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { NbCardModule } from '@nebular/theme';
-import { CadastrosRoutingModule, routedComponents } from './cadastros-routing.module';
+import { CadastrosRoutingModule} from './cadastros-routing.module';
+import { ParceiroComponent } from './parceiro/parceiro.component';
+import { CidadeComponent } from './cidade/cidade.component';
+import { CadastrosComponent } from './cadastros.component';
 
 @NgModule({
   imports: [
@@ -8,7 +11,9 @@ import { CadastrosRoutingModule, routedComponents } from './cadastros-routing.mo
     NbCardModule,
   ],
   declarations: [
-    ...routedComponents,
+    CadastrosComponent,
+    CidadeComponent,
+    ParceiroComponent,
   ],
 })
 export class CadastrosModule {

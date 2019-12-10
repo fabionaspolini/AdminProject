@@ -3,13 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { CadastrosComponent } from './cadastros.component';
 import { CidadeComponent } from './cidade/cidade.component';
+import { ParceiroComponent } from './parceiro/parceiro.component';
 
 const routes: Routes = [{
   path: '',
   component: CadastrosComponent,
-  children: [{
-    path: 'cidade', component: CidadeComponent,
-  }],
+  children: [
+    {path: 'cidades', component: CidadeComponent},
+    {path: 'parceiros', component: ParceiroComponent},
+  ],
 }];
 
 @NgModule({
@@ -18,8 +20,3 @@ const routes: Routes = [{
 })
 export class CadastrosRoutingModule {
 }
-
-export const routedComponents = [
-  CadastrosComponent,
-  CidadeComponent,
-];
