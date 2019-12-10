@@ -17,7 +17,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Cidades',
-        link: '/pages/cidade',
+        link: '/pages/cadastros/cidade',
       },
     ],
   },
